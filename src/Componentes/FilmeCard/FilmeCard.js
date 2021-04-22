@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function FilmeCard({filme}){
 
@@ -21,9 +22,9 @@ function FilmeCard({filme}){
 			        </p>
 			      </div>
 			      <div className="card-footer">
-			      	<a href="#" className="btn btn-warning btn-sm w-100 border-dark">
+			      	<Link to={`/${filme.imdbID}`} className="btn btn-warning btn-sm w-100 border-dark">
 			      		Detalhes
-			      	</a>
+			      	</Link>
 			     	</div>
 				</div>
 			</div>

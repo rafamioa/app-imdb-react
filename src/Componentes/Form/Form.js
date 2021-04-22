@@ -40,7 +40,7 @@ function Form(){
 			<form onSubmit={handleSubmit}>
 				<div className="row d-flex justify-content-center">
 					{loading ? 
-						<p className="text-warning" >Pesquisando...</p> : 
+						<p className="text-warning " >Pesquisando...</p> : 
 						<>
 						<input 
 							type="text" 

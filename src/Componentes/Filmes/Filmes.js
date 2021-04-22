@@ -7,7 +7,10 @@ function Filmes({filmes}){
 		
 		<section className="container mt-5">
 			<div className="row" >
-				 {filmes.map(filme => (<FilmeCard filme={filme} key={filme.imdbID}/>))}
+				 {filmes.map(filme => (
+				 		<FilmeCard filme={filme} key={filme.imdbID}/> 	
+				 	)
+				 )}
 			 </div>
 		</section>
 
