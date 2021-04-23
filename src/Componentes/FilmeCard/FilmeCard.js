@@ -1,7 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function FilmeCard({filme}){
+function FilmeCard({filme, deleteStorage}){
+
+	function remover(imdbID){
+		deleteStorage(imdbID)
+	}
 
 	return (
 			<div className="col-3 mt-2 ">
@@ -21,10 +25,11 @@ function FilmeCard({filme}){
 				        {filme.imdbRating}
 			        </p>
 			      </div>
-			      <div className="card-footer">
-			      	<Link to={`/${filme.imdbID}`} className="btn btn-warning btn-sm w-100 border-dark">
+			      <div className="card-footer row">
+			      	<Link to={`/${filme.imdbID}`} className="btn btn-warning btn-sm w-100 border-dark col-8 mt-auto">
 			      		Detalhes
 			      	</Link>
+			      	<a href="#" onClick={e => remover(filme.imdbID)} className="btn btn-danger btn-sm border-dark ml-auto col-3">x</a>
 			     	</div>
 				</div>
 			</div>
