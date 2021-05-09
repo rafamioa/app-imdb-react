@@ -1,9 +1,14 @@
 .nav{
 	padding: 5px 5px;
+	background-color: #272838;
 }
 
 .logo{
 	width: 100%;
 	max-width: 75px;
 	align-items: center;
+}
+
+nav{
+
 }

@@ -4,7 +4,7 @@ import Routes from './Componentes/Routes';
 
 function App() {
   return (
-    <div className="App bg-secondary">
+    <div className="App">
     	<Routes />
      </div>
   );
